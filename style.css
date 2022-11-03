@@ -3,18 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --card-color-primery: #f7dd43;
+  --card-color-second: #121214;
+  -card-color-main: #746615;
+}
 ul {
   list-style: none;
 }
 body {
-  background-color: #121214;
+  background-color: var(--card-color-second);
   background-image: url(./assets/img/bg_desktop.png);
-  background-position-x: center;
-  background-position-y: -715px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #app {
   width: fit-content;
-  margin: 52px auto;
+  margin: auto;
+  padding-top: 52px;
 }
 header {
   margin-bottom: 63px;
@@ -29,7 +36,7 @@ header {
   padding: 32px 23px;
   text-align: center;
   background: #1d1c19;
-  border-bottom: 2px solid #f7dd43;
+  border-bottom: 2px solid var(--card-color-primery);
   border-radius: 6px;
 }
 .card h2 {
@@ -45,7 +52,7 @@ header {
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
-  color: #f7dd43;
+  color: var(--card-color-primery);
 }
 .card h2 span {
   color: #e1e1e6;
@@ -67,9 +74,30 @@ header {
   padding-top: 24px;
   border-top: 1px solid #323238;
 }
+
+/*-------- ANIMAÇÃO DO CARD ---------*/
 .card ul li strong {
   font-weight: 900;
   font-size: 36px;
   line-height: 125%;
   color: #e1e1e6;
+}
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+  transform: scale(1.1);
+}
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+  transition: 0.3s;
+}
+
+/*------- RESPONSIVIDADE ----*/
+@media (min-width: 700px) {
+  #cards {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
