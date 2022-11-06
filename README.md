@@ -22,6 +22,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto NLW Copa, aprasenta o calendário da copa 2022.
+O projeto NLW Copa, apresenta o calendário da copa 2022.
 
 <br>
