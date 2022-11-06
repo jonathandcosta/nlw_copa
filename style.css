@@ -24,8 +24,18 @@ body {
   padding-top: 52px;
 }
 header {
-  margin-bottom: 63px;
+  margin-bottom: 30px;
   text-align: center;
+}
+.titulo {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 125%;
+  color: var(--card-color-primery);
+  margin-top: 63px;
+}
+span {
+  color: #fff;
 }
 #cards {
   display: flex;
@@ -95,6 +105,12 @@ header {
 
 /*------- RESPONSIVIDADE ----*/
 @media (min-width: 700px) {
+  .titulo {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 125%;
+    color: var(--card-color-primery);
+  }
   #cards {
     justify-content: center;
     flex-direction: row;
